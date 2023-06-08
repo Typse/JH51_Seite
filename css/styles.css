@@ -9,8 +9,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    background: rgba(0, 100, 100, 0.5);
     transition: top 0.3s;
 }
 
@@ -24,12 +24,12 @@ body {
 
 #navigation ul {
     list-style-type: none;
-    padding: 0;
+    text-align: center;
 }
 
 #navigation li {
     display: inline;
-    margin-right: 1em;
+    margin: 4em;
 }
 
 #navigation a {
@@ -37,7 +37,13 @@ body {
     text-decoration: none;
 }
 
+#navigation a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
 #content {
+    padding-top: 2em;
     margin: 2em;
     clear: both;
 }
