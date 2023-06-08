@@ -1,0 +1,58 @@
+body {
+    background: #000 url(stars-background.jpg) no-repeat center center fixed;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: top 0.3s;
+}
+
+#navigation.hide {
+    top: -40px;
+}
+
+#navigation:hover {
+    top: 0;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 1em;
+}
+
+#navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#content {
+    margin: 2em;
+    clear: both;
+}
+
+.tile {
+    width: 66%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#deep-space {
+	height: 40em;
+}
