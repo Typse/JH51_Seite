@@ -1,0 +1,48 @@
+#planet-container {
+	display: grid;
+	grid-gap: 20px;
+	padding: 20px;
+	margin-top: 3%;
+	width: 350px;
+	justify-content: flex-start;
+	opacity: 1 !important;
+}
+
+.planet {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.planet:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.planet img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.planet-info {
+	text-align: center;
+	display: block;
+}
+
+.planet:hover .planet-info {
+	display: block;
+}
+
+#background-planets {
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,30 @@
+footer {
+	background-color: rgba(34, 40, 49, 1);
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.credits {
+	font-size: 14px;
+}
+
+.page-up {
+	background-color: #00adb5;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.page-up:hover {
+	background-color: #393e46;
+}
