@@ -10,6 +10,7 @@
 	align-items: center;
 	align-content: center;
 	z-index: 99;
+	transform: ;
 }
 
 /*#navigation.hide .icons-left img, #navigation.hide .icons-right img {
@@ -25,6 +26,8 @@
 #navigation.hide {
 	top: -40px;
 }
+
+
 
 #navigation:hover {
 	top: 0;
