@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
 </head>
 <body>
     <nav id="navigation" class="nav-hidden">
-        <ul id="nav-text">
+		<!--<div class="icons-left">
+			<img src="pics/icons/planets/merkur.png" alt="Merkur">
+			<img src="pics/icons/planets/venus.png" alt="Venus">
+			<img src="pics/icons/planets/erde.png" alt="Erde">
+			<img src="pics/icons/planets/mars.png" alt="Mars">
+		</div>-->
+        <ul>
             <li><a href="#mond">Mond</a></li>
-            <li><a href="#sosy">SoSy</a></li>
-            <li><a href="#deep-space">Deep-Space</a></li>
-            <li><a href="#raumzeit">Raumzeit</a></li>
+
+			<li class="dropdown">
+            	<a href="#sosy">SoSy</a>
+				<div class="dropdown-content">
+				    <div class="icons">
+				        <a href="#merkur"><img src="pics/icons/planets/merkur.png" alt="Merkur"></a>
+				        <a href="#venus"><img src="pics/icons/planets/venus.png" alt="Venus"></a>
+						<a href="#erde"><img src="pics/icons/planets/erde.png" alt="Erde"></a>
+						<a href="#mars"><img src="pics/icons/planets/mars.png" alt="Mars"></a>
+						<a href="#jupiter"><img src="pics/icons/planets/jupiter.png" alt="Jupiter"></a>
+						<a href="#saturn"><img src="pics/icons/planets/saturn.png" alt="Saturn"></a>
+						<a href="#uranus"><img src="pics/icons/planets/uranus.png" alt="Uranus"></a>
+				        <a href="#neptun"><img src="pics/icons/planets/neptun.png" alt="Neptun"></a>
+				    </div>
+				</div>
+			</li>
+			<li><a href="#deep-space">Deep-Space</a></li>
         </ul>
+		<!--<div class="icons-right">
+			<img src="pics/icons/planets/jupiter.png" alt="Jupiter">
+			<img src="pics/icons/planets/saturn.png" alt="Saturn">
+			<img src="pics/icons/planets/uranus.png" alt="Uranus">
+			<img src="pics/icons/planets/neptun.png" alt="Neptun">
+    	</div>-->
     </nav>
-    <main id="content">
-        <section class="tile" id="mond">
-            <h2>Mond</h2>
-            <p>Content zum Thema Mond...</p>
-        </section>
-        <section class="tile" id="sosy">
-            <h2>SoSy</h2>
-            <p>Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...Content zum Thema SoSy...</p>
-        </section>
-        <section class="tile" id="deep-space">
-            <h2>Deep-Space</h2>
-            <p>Content zum Thema Deep-Space...</p>
-        </section>
-        <section class="tile" id="raumzeit">
-            <h2>Raumzeit</h2>
-            <p>Content zum Thema Raumzeit...</p>
-        </section>
-    </main>
+	<div id="background-top">
+		<main class="content">
+			<div id="welcome">
+				<h1>Welcome to the Cosmos</h1>
+				<p>"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." - Carl Sagan</p>
+			</div>		
+    	</main>
+	</div>
+    <div id="spacer"></div>
+	<div id="background-mid">
+		<main class="content">
+			<div id="moon_text">
+				<h1>The moon....</h1>
+				<p>Discover the wonders of our celestial companion.</p>
+			</div>		
+		</main>
+	</div>
     <script src="js/script.js"></script>
 </body>
 </html>
