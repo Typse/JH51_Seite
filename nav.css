@@ -1,0 +1,133 @@
+#navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.5);
+	transition: top 0.3s;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	z-index: 99;
+}
+
+/*#navigation.hide .icons-left img, #navigation.hide .icons-right img {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+																			not in use anymore, maybe later
+#navigation:hover .icons-left img, #navigation:hover .icons-right img {
+	opacity: 100;
+	transition: opacity 0.5s;
+}*/
+
+#navigation.hide {
+	top: -40px;
+}
+
+#navigation:hover {
+	top: 0;
+}
+
+#navigation ul {
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	flex: 1 1 auto;
+	justify-content: center;
+}
+
+#navigation li {
+	width: auto;
+	height: auto;
+	padding: 25px;
+	margin: 2em;
+}
+
+#navigation li:hover {
+	background-color:rgba(255,255,255,0.35);
+	transition: background-color 250ms;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+#navigation a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: yellow;
+	text-decoration: none;
+}
+
+.icons-left, .icons-right {
+	display: flex;
+	overflow: hidden;
+	flex: 1 1 auto;
+}
+
+.icons-left img, .icons-right img {
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 35px;
+    flex-shrink: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+	opacity: 0;
+	max-height: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 0%;
+    top: 60px; /* Höhe nav */
+	z-index: 1;
+	transition: all 2.5s;
+	left: -999px; /* bugfix with hover */
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color:rgba(255,255,255,0.35);
+	transition: background-color 250ms;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+	opacity: 1;
+	max-height: 100%;
+	left: 0px;
+	width: 100%;
+}
+
+.dropdown:hover {
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	flex-shrink: 1;
+}
+
+.icons img {
+    width: 70%;
+    height: auto;
+}

@@ -1,0 +1,126 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in { /* for javascript css function */
+    opacity: 1 !important;
+    transform: translateY(10px) !important; /* only useable with top e.g. moon_text*/
+    animation: fadeIn 1s ease-in-out ease-in-out;
+}
+
+
+
+body {
+	margin: 0;
+	background: rgba(0,0,0,1.00);
+	
+}
+
+#spacer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+#background-top {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	height: 1080px;
+	background: url("../pics/pixabay/astronomy-1868560.jpg") no-repeat center;
+	background-attachment: scroll;
+	position: relative;
+	overflow: auto;
+}
+
+#background-top::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+#background-mid {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background: url("../pics/pixabay/moon-pixabay-47367.jpg") no-repeat center;
+	background-size:cover;
+	height: 1080px;
+}
+
+.main {
+	position: relative;
+	display: flex;
+	flex-grow: 1;
+}
+
+#content {
+	position: relative;
+	z-index: 1;
+}
+
+#welcome {
+	display: block;
+	position: absolute;
+	margin-top: 25%;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	transform: translate(0%, 50%);
+	animation: fadeIn 1s ease-in-out forwards;
+	color: white;
+	font-size: 1.5em;
+}
+
+#welcome h1 {
+	font-size: 3em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#moon_text {
+	position: absolute;
+	transform: translate(0%, 50%);
+	display: block;
+	margin-top: -5%;	
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	color: white;
+	font-size: 1.5em;
+	background-color: rgba(0,0,0,0.72);
+	overflow: hidden;
+}
+
+
+
+#moon_text h1 {
+	font-size: 2em;
+}
+
+.tile {
+    width: 66%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 2em;
+    padding: 1em;
+}
