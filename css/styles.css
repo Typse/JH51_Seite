@@ -10,23 +10,41 @@
 }
 
 .fade-in { /* for javascript css function */
-    opacity: 1 !important;
-    transform: translateY(10px) !important; /* only useable with top e.g. moon_text*/
-    animation: fadeIn 1s ease-in-out ease-in-out;
+	opacity: 1 !important;
+	transform: translateY(10px) !important; /* only useable with top e.g. moon_text*/
+	animation: fadeIn 1s ease-in-out ease-in-out;
+	height: auto;
 }
 
-
+.fade-in-side { /* for javascript css function */
+	opacity: 1 !important;
+	transform: translateX(-10px) !important; /* only useable with top e.g. moon_text*/
+	animation: fadeIn 0.5s ease-in-out ease-in-out;
+	height: auto;
+}
 
 body {
 	margin: 0;
 	background: rgba(0,0,0,1.00);
-	
+	color:whitesmoke;
+	overflow-x: hidden;
+
 }
 
 #spacer {
-    width: 100%;
-    height: 150px;
-    background-color: black;
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	z-index: -99;
+}
+
+#spacer-bottom {
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	z-index: -99;
 }
 
 #background-top {
@@ -39,7 +57,6 @@ body {
 	background: url("../pics/pixabay/astronomy-1868560.jpg") no-repeat center;
 	background-attachment: scroll;
 	position: relative;
-	overflow: auto;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -62,9 +79,25 @@ body {
 	right: 0;
 	bottom: 0;
 	z-index: -1;
+	position: relative;
 	background: url("../pics/pixabay/moon-pixabay-47367.jpg") no-repeat center;
 	background-size:cover;
+	background-attachment: scroll;
 	height: 1080px;
+	font-size: 1.2em;
+}
+
+#background-mid::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	opacity: 0;
+	z-index: -1;
 }
 
 .main {
@@ -81,7 +114,7 @@ body {
 #welcome {
 	display: block;
 	position: absolute;
-	margin-top: 25%;
+	margin-top: 15%;
 	width: 100%;
 	text-align: center;
 	z-index: 1;
@@ -98,30 +131,214 @@ body {
 }
 
 #moon_text {
-	position: absolute;
-	transform: translate(0%, 50%);
+	position: relative;
+	transform: translateY(-50%);
 	display: block;
-	margin-top: -5%;	
 	width: 100%;
 	text-align: center;
 	z-index: 1;
 	opacity: 0;
-	transition: opacity 0.5s ease, transform 0.5s ease;
+	transition: opacity 1s ease, transform 1s ease;
 	color: white;
 	font-size: 1.5em;
-	background-color: rgba(0,0,0,0.72);
-	overflow: hidden;
+}
+
+#moon_text.fade-in {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#moon_text h1 {
+	position: relative;
+	top: -1em;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#moon_side_text {
+	position: absolute;
+	top: 35%;
+	right: 0;
+	opacity: 0;
+	display: block;
+	text-align: center;
+	transform: translateX(50%);
+	transition: opacity 1s ease, transform 2s ease;
+	font-size: 1.4em;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.35);
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#moon_side_text li {
+	font-size: 1.2em;
+		list-style-type: none;
+		overflow-x: hidden;
+}
+
+#dm {
+	transition: opacity 1s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#dst {
+	transition: opacity 1s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#rot {
+	transition: opacity 1s ease, transform 2s ease;
+	opacity: 0;
+
+}
+
+#dm.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 50px 0;
+}
+
+#rot.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 50px 0;
+}
+
+#dst.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
 }
 
 
+#moon_side_text.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	height: auto;
+}
 
-#moon_text h1 {
-	font-size: 2em;
+#background-bottom {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	position: relative;
+	background: url("../pics/pixabay/orion-nebula-11107.jpg") no-repeat center;
+	background-size:cover;
+	background-attachment: scroll;
+	height: 1080px;
+	font-size: 1.4em;
+}
+
+#background-bottom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	opacity: 0;
+	z-index: -1;
+}
+
+#deep_space_text {
+	position: relative;
+	transform: translateY(-50%);
+	display: block;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 1s ease, transform 1s ease;
+	color: white;
+	font-size: 1.5em;
+}
+
+#deep_space_text.fade-in {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#deep_space {
+	position: relative;
+	height: 100vh;
+	align-content: center;
+
+
+}
+
+#deepText {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translateX(10%);
+}
+
+#deepText ul {
+	list-style-type: none;
+}
+
+#nebula1 {
+	transition: opacity 3s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#nebula2 {
+	transition: opacity 3s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#nebula3 {
+	transition: opacity 3s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#nebula4 {
+	transition: opacity 3s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#nebula5 {
+	transition: opacity 3s ease, transform 2s ease;
+	opacity: 0;
+}
+
+#nebula1.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 25px 0;
+}
+
+#nebula2.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 25px 0;
+}
+
+#nebula3.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 25px 0;
+}
+
+#nebula4.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 25px 0;
+}
+
+#nebula5.fade-in-side {
+	opacity: 1;
+	transform: translateX(-100px);
+	padding: 25px 0;
 }
 
 .tile {
-    width: 66%;
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 2em;
-    padding: 1em;
+	width: 66%;
+	background: rgba(255, 255, 255, 0.1);
+	margin-bottom: 2em;
+	padding: 1em;
 }

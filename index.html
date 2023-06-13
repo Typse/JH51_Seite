@@ -3,62 +3,100 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<title>Astro-Zeugs</title>
 </head>
 <body>
-    <nav id="navigation" class="nav-hidden">
+	<nav id="navigation" class="nav-hidden">
 		<!--<div class="icons-left">
 			<img src="pics/icons/planets/merkur.png" alt="Merkur">
 			<img src="pics/icons/planets/venus.png" alt="Venus">
 			<img src="pics/icons/planets/erde.png" alt="Erde">
 			<img src="pics/icons/planets/mars.png" alt="Mars">
 		</div>-->
-        <ul>
-            <li><a href="#mond">Mond</a></li>
+		<ul>
+			<li><a href="index.html">Startseite</a></li>
 
 			<li class="dropdown">
-            	<a href="#sosy">SoSy</a>
+				<a>SoSy</a>
 				<div class="dropdown-content">
-				    <div class="icons">
-				        <a href="sosy.html?#merkur"><img src="pics/icons/planets/merkur.png" alt="Merkur"></a>
-				        <a href="sosy.html?#venus"><img src="pics/icons/planets/venus.png" alt="Venus"></a>
-						<a href="sosy.html?#erde"><img src="pics/icons/planets/erde.png" alt="Erde"></a>
-						<a href="sosy.html?#mars"><img src="pics/icons/planets/mars.png" alt="Mars"></a>
-						<a href="sosy.html?#jupiter"><img src="pics/icons/planets/jupiter.png" alt="Jupiter"></a>
-						<a href="sosy.html?#saturn"><img src="pics/icons/planets/saturn.png" alt="Saturn"></a>
-						<a href="sosy.html?#uranus"><img src="pics/icons/planets/uranus.png" alt="Uranus"></a>
-				        <a href="sosy.html?#neptun"><img src="pics/icons/planets/neptun.png" alt="Neptun"></a>
-				    </div>
+					<div class="icons">
+						<a href="asosy.html?#merkur"><img src="pics/icons/planets/merkur.png" alt="Merkur"></a>
+						<a href="asosy.html?#venus"><img src="pics/icons/planets/venus.png" alt="Venus"></a>
+						<a href="asosy.html?#erde"><img src="pics/icons/planets/erde.png" alt="Erde"></a>
+						<a href="asosy.html?#mars"><img src="pics/icons/planets/mars.png" alt="Mars"></a>
+						<a href="asosy.html?#jupiter"><img src="pics/icons/planets/jupiter.png" alt="Jupiter"></a>
+						<a href="asosy.html?#saturn"><img src="pics/icons/planets/saturn.png" alt="Saturn"></a>
+						<a href="asosy.html?#uranus"><img src="pics/icons/planets/uranus.png" alt="Uranus"></a>
+						<a href="asosy.html?#neptun"><img src="pics/icons/planets/neptun.png" alt="Neptun"></a>
+					</div>
 				</div>
 			</li>
-			<li><a href="#deep-space">Deep-Space</a></li>
-        </ul>
+			<li><a href="deepspace.html">Deep-Space</a></li>
+		</ul>
 		<!--<div class="icons-right">
 			<img src="pics/icons/planets/jupiter.png" alt="Jupiter">
 			<img src="pics/icons/planets/saturn.png" alt="Saturn">
 			<img src="pics/icons/planets/uranus.png" alt="Uranus">
 			<img src="pics/icons/planets/neptun.png" alt="Neptun">
-    	</div>-->
-    </nav>
+		</div>-->
+	</nav>
 	<div id="background-top">
 		<main class="content">
 			<div id="welcome">
 				<h1>Welcome to the Cosmos</h1>
-				<p>"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." - Carl Sagan</p>
-			</div>		
-    	</main>
-	</div>
-    <div id="spacer"></div>
-	<div id="background-mid">
-		<main class="content">
-			<div id="moon_text">
-				<h1>The moon....</h1>
-				<p>Discover the wonders of our celestial companion.</p>
+				<p>The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself. - Carl Sagan</p>
 			</div>		
 		</main>
 	</div>
-    <script src="js/script.js"></script>
+	<div id="spacer">
+			<div id="moon_text">
+				<h1>The Moon</h1>
+				<p>Discover the wonders of our celestial companion.</p>
+			</div>
+	</div>
+	<div id="background-mid">
+		<main class="content">
+
+			<div id="moon_side_text">
+				<ul>
+					<li id="dm">Durchmesser - 3.474 km</li>
+					<li id="dst">Entfernung - 384.000 km</li>
+					<li id="rot">Umlaufzeit - 27,3 Tage</li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<div id="spacer-bottom">
+			<div id="deep_space_text">
+				<h1>Deep Space Exploration</h1>
+				<p>Embark on an extraordinary journey through the vastness of the cosmos.</p>
+			</div>
+	</div>
+	<div id="background-bottom">
+		<main class="content">
+			<div id="deep_space">
+				<div id="deepText">
+					<ul>
+						<li id="nebula1">Der Orionnebel ist im Sternbild Orion.</li>
+						<li id="nebula2">Ist mit bloßem Auge sichtbar</li>
+						<li id="nebula3">Entfernung ~1344 Lichtjahre</li>
+						<li id="nebula4">Region mit aktiver Sternentstehung</li>
+						<li id="nebula5">Liefert tiefe Einblicke in die stellare Entwicklung</li>
+					</ul>
+				</div>		
+			</div>
+		</main>
+	</div>
+	<footer>
+		<div class="footer-content">
+			<p class="credits">© 2023 CosmosForLife. All rights reserved. All Pictures from Pixabay, 8icon and ESO!</p>
+			<button class="page-up">Scroll Up</button>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

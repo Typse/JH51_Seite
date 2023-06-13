@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/planets.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<title>Sonnensystem</title>
+	<style id="dynamic-style"></style>
+</head>
+<body>
+	<nav id="navigation" class="nav-hidden">
+		<div class="icons-left">
+			<a href="#merkur"> <img src="pics/icons/planets/merkur.png" alt="Merkur"></a>
+			<a href="#venus"> <img src="pics/icons/planets/venus.png" alt="Venus"></a>
+			<a href="#erde"> <img src="pics/icons/planets/erde.png" alt="Erde"></a>
+			<a href="#mars"> <img src="pics/icons/planets/mars.png" alt="Mars"></a>
+		</div>
+		<ul>
+			<li class="dropdown">
+				<a href="index.html">Zurück</a>
+			</li>
+		</ul>
+		<div class="icons-right">
+			<a href="#jupiter"> <img src="pics/icons/planets/jupiter.png" alt="Jupiter"></a>
+			<a href="#saturn"> <img src="pics/icons/planets/saturn.png" alt="Saturn"></a>
+			<a href="#uranus"> <img src="pics/icons/planets/uranus.png" alt="Uranus"></a>
+			<a href="#neptun"> <img src="pics/icons/planets/neptun.png" alt="Neptun"></a>
+		</div>
+	</nav>
+	<div id="background-planets">
+		<div id="planet-container">
+			<div class="planet" id="merkur" data-bg-image="pics/pixabay/planets/mercury-11591_640.png">
+				<img src="pics/icons/planets/merkur.png" alt="Merkur">
+				<div class="planet-info">
+					<h2>Merkur</h2>
+					<p>Merkur ist der innerste und kleinste Planet in unserem Sonnensystem.</p>
+				</div>
+			</div>
+			<div class="planet" id="venus" data-bg-image="pics/pixabay/planets/venus-6672273.jpg">
+				<img src="pics/icons/planets/venus.png" alt="Venus">
+				<div class="planet-info">
+					<h2>Venus</h2>
+					<p>Venus ist der zweite Planet von der Sonne aus und hat eine dichte Atmosphäre.</p>
+				</div>
+			</div>
+			<div class="planet" id="erde" data-bg-image="pics/pixabay/planets/earth-11008.jpg">
+				<img src="pics/icons/planets/erde.png" alt="Erde">
+				<div class="planet-info">
+					<h2>Erde</h2>
+					<p>Die Erde ist unser Heimatplanet und der einzige bekannte Ort mit Leben.</p>
+				</div>
+			</div>
+			<div class="planet" id="mars" data-bg-image="pics/pixabay/planets/mars-11012.jpg">
+				<img src="pics/icons/planets/mars.png" alt="Mars">
+				<div class="planet-info">
+					<h2>Mars</h2>
+					<p>Mars ist ein eisiger Planet, der eine seitliche Neigung aufweist, die ihn einzigartig macht.</p>
+				</div>
+			</div>
+			<div class="planet" id="jupiter" data-bg-image="pics/pixabay/planets/jupiter-6595135.jpg">
+				<img src="pics/icons/planets/jupiter.png" alt="Jupiter">
+				<div class="planet-info">
+					<h2>Jupiter</h2>
+					<p>Jupiter ist der größte Planet in unserem Sonnensystem und besteht hauptsächlich aus Gas.</p>
+				</div>
+			</div>
+			<div class="planet" id="saturn" data-bg-image="pics/pixabay/planets/saturn-67671.jpg">
+				<img src="pics/icons/planets/saturn.png" alt="Saturn">
+				<div class="planet-info">
+					<h2>Saturn</h2>
+					<p>Saturn ist für seine atemberaubenden Ringe bekannt und besteht ebenfalls hauptsächlich aus Gas.</p>
+				</div>
+				</div>
+			<div class="planet" id="uranus" data-bg-image="pics/pixabay/planets/jupiter-6595135.jpg">
+				<img src="pics/icons/planets/uranus.png" alt="Uranus">
+				<div class="planet-info">
+					<h2>Uranus</h2>
+					<p>Uranus ist ein weiterer Gasplanet mit einer einzigartigen seitlichen Neigung.</p>
+				</div>
+			</div>
+			<div class="planet" id="neptun" data-bg-image="pics/pixabay/planets/jupiter-6595135.jpg">
+				<img src="pics/icons/planets/neptun.png" alt="Neptun">
+				<div class="planet-info">
+					<h2>Neptun</h2>
+					<p>Neptun ist der äußerste Planet in unserem Sonnensystem und besteht ebenfalls hauptsächlich aus Gas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-content">
+			<p class="credits">© 2023 CosmosForLife. All rights reserved. All Pictures from Pixabay, 8icon and ESO!</p>
+			<button class="page-up">Scroll Up</button>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+	<script src="js/planets.js"></script>
+</body>
+</html>
